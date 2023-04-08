@@ -39,7 +39,7 @@
 set -Eeuo pipefail
 
 # get script file location
-SCRIPT_PATH="$(realpath -e ${BASH_SOURCE[0]})";
+SCRIPT_PATH="$(realpath ${BASH_SOURCE[0]})";
 SCRIPT_DIR="${SCRIPT_PATH%/*}"
 
 ################################################################################
